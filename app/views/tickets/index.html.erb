@@ -1,0 +1,8 @@
+<h1>All Tickets for <%= @project.name %> project</h1>
+
+<% @tickets.each do |ticket| %>
+	
+	<p>
+		<%= link_to ticket.name, [@project, ticket] %>
+  </p>
+<% end %>
